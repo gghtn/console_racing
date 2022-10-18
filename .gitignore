@@ -3,6 +3,23 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+##folders
+Debug/
+Release/
+x64/
+.vs/
+**/Debug/
+**/Release/
+**/x64/
+
+##files
+*.sln
+**/*.vcxproj
+**/*.vcxproj.*
+**/*.i
+**/*.obj
+
+
 # User-specific files
 *.rsuser
 *.suo
