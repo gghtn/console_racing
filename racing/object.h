@@ -9,6 +9,7 @@ protected:
 	string mObjectStr;
 public:
 	CObject(int x) { mX = x, mY = 0, mbCrash = false, mbExist = false, mObjectStr = ""; }
+	virtual ~CObject() {}
 
 	virtual void Init(int) = 0;	//순수 가상 함수
 
