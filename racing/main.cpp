@@ -9,9 +9,9 @@ int main() {
 	cout << "게임을 끝내려면 ESC 키를, 게임을 시작하려면 아무키나 누르십시오.";
 	int key = _getch();
 
+	CGame game;
 	while (1) {
 		if (key != 27) {
-			CGame game;
 			game.GameStart();
 		}
 		else break;
