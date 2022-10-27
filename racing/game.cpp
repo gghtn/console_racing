@@ -19,9 +19,13 @@ CGame::CGame() {
 }
 CGame::~CGame() {
 	delete[] p[0];
+	delete[] p[1];
+	p[0] = NULL;
+	p[1] = NULL;
 }
 
 void CGame::GameStart() {
+	Init();
 	SetConsoleSize(120, 50);
 	ScreenInit();
 	CUser user;
